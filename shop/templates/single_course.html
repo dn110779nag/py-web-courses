@@ -1,0 +1,47 @@
+{% extends 'base.html'%}
+{% block titleBlock %} Course: {{ course.title }} {% endblock %}
+{% block content %}
+<div class="container text-center">
+
+    <div class="row">
+        <div class="col">
+            Title:
+        </div>
+        <div class="col">
+            {{course.title}}
+        </div>
+    </div>
+    <div class="row">
+        <div class="col">
+            Price:
+        </div>
+        <div class="col">
+            {{course.price}}
+        </div>
+    </div>
+    <div class="row">
+        <div class="col">
+            Students quantity:
+        </div>
+        <div class="col">
+            {{course.students_qty}}
+        </div>
+    </div>
+    <div class="row">
+        <div class="col">
+            Reviews quantity:
+        </div>
+        <div class="col">
+            {{course.reviews_qty}}
+        </div>
+    </div>
+    <div class="row">
+        <div class="col">
+           Category:
+        </div>
+        <div class="col">
+            {{course.category.title}}
+        </div>
+    </div>
+</div>
+{% endblock %}
